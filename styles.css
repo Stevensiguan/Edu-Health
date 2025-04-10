@@ -1,0 +1,74 @@
+/* Ensure header sticks to the top */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #343a40; /* Bootstrap dark background */
+}
+
+/* Ensure profile section moves to the right */
+.profile {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between image and dropdown */
+}
+
+/* Dropdown menu alignment */
+.dropdown-menu {
+    right: 0 !important;
+    margin-left: 30px;
+    min-width: 150px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #6c757d; /* Bootstrap secondary background */
+    color: white;
+}
+.dashboard{
+    background-color: #d9eafd;
+}
+
+/* Sidebar list items */
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar li {
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.sidebar li:hover,
+.sidebar li.active {
+    background-color: #495057;
+}
+.table-title {
+    background-color: transparent; /* Remove background */
+    padding-bottom: 10px; /* Add spacing */
+}
+.custom-card {
+    background-color: #cceeff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Responsive fix for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .profile {
+        margin-left: 0;
+    }
+}
